@@ -243,3 +243,73 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+
+/* media queries here */
+
+@media screen and (max-width: 640px) {
+  .header {
+    position: static;
+  }
+  #logo {
+    width: 625px;
+    text-align: center;
+  }
+  nav {
+    text-align: center;
+    width: 625px;
+    padding-bottom: 20px;
+  }  
+  .main-section {
+    margin-top: 50px;
+    width: 640px;
+  }
+  .sidebar {
+    max-width: 640px;
+  }
+  .work {
+    width: 640px;
+  }
+
+  /*perhaps i can change width of container first, then header and logo so they stack (are in the same container),
+  maybe focus on extending width of items NOT in separate containers. */
+}
+
+@media screen and (min-width:641px) and (max-width: 768px) {
+  .sidebar {
+    max-width: 768px;
+    text-align: center;
+  }
+  .main-section {
+    max-width: 768px; 
+    /* I couldn't get the main section on the contact page to fill the page :( */
+  }
+  .work {
+    width: 320px;
+  }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  #logo {
+    margin-left: 100px;
+  }
+  nav {
+    margin-right: 100px;
+  }
+  #main-container {
+    max-width: 760px;
+  }
+  .main-section {
+    width: 50%;
+  }
+  .auth-image {
+    width: 300px;
+    padding-bottom: 15px;    
+  }
+  .sidebar {
+    width: 50%;
+  }
+}
+
